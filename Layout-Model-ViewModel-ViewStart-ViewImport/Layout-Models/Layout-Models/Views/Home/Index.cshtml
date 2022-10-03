@@ -1,0 +1,15 @@
+﻿@model HomeVM
+ 
+<main>
+    <ul>
+        @foreach (var item in Model.Books)
+        {
+            <li>@item.Name</li>
+            <li>@item.AuthorName</li>
+            <li>@item.PublishDate.ToString("MM-dd-yyyy")</li>
+        }
+    </ul>
+    <h1>@Model.Car.Name</h1>
+    <h1>@Model.Car.Color</h1>
+</main>
+
